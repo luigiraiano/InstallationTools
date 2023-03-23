@@ -11,6 +11,14 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 sudo apt update
 sudo apt install ros-noetic-desktop-full
 
+ROS_WS_DIR=~/ros
+if [ ! -d "$ROS_WS_DIR" ];
+then
+	echo "Creating dir: $ROS_WS_DIR"
+	mkdir $ROS_WS_DIR
+fi
+echo "export ROS_WS_DIR=$ROS_WS_DIR" >> ~/.env_params.env
+
 echo ""
 echo "ROS Noetic Installed. Installing main dependencies ..."
 
@@ -22,7 +30,6 @@ rosdep update
 echo ""
 echo "Installing Qt-ROS Plugin ..."
 sudo snap install qtcreator-ros --classic
-
 
 echo ""
 echo "personalizing bashrc ..."
