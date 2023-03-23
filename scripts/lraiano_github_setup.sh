@@ -53,19 +53,35 @@ if [ "$x1" = "y" ]; then
 	
 	if [ $git_installed = true ]; then
 
-		UTILS_DIR=$GITHUB_DIR/Utils
-		if [ -d "$UTILS_DIR" ];
-		then
-			echo "$UTILS_DIR directory exists."
-		else
-			echo "Creating dir: $UTILS_DIR"
-			mkdir $UTILS_DIR
+		read -p 'Do you want to clone Utils repo? (y/n): ' x2
+
+		if [ "$x2" = "y" ]; then
+
+			UTILS_DIR=$GITHUB_DIR/Utils
+			if [ -d "$UTILS_DIR" ];
+			then
+				echo "$UTILS_DIR directory exists."
+			else
+				echo "Creating dir: $UTILS_DIR"
+				mkdir $UTILS_DIR
+			fi
+	
+				cd $UTILS_DIR
+				
+				echo "Cloning Utilies to $UTILS_DIR git"
+				git clone git@github.com:luigiraiano/custom_scripts.git
+	
+				echo "Cloning Completed."
 		fi
 
-		cd $UTILS_DIR
+		if [ ! -f "~/.env_params.env" ];
+		then
+			touch ~/.env_params.env
+		fi
 		
-		echo "Cloning Utilies to $UTILS_DIR git"
-		git clone git@github.com:luigiraiano/custom_scripts.git
+		echo "export GITHUB_DIR=$GITHUB_DIR" >> ~/.env_params.env
+		sudo echo "source ~/.env_params.env" >> ~/.bashrc
+		
 
 	else
 		echo "'git' is not installed. Please install 'git' in the previous step and relaunch this script."
@@ -95,5 +111,6 @@ else
 	#echo "6- Select and copyt the content appeared in the terminal"
 	#echo "5- Go to Github -> Settings -> SSH and GPG keys -> Add New SSH Key -> Paste the content copied in step (5)."
 fi
+
 
 
