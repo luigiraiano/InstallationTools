@@ -16,7 +16,7 @@ Launch `lraiano_github_setup.sh` script to install `git`, `git-cola` and clone t
 After completing, the directory `~/git/lraiano_github/Utilities` is created.
 
 ```
-cd ~/Downloads/InstallationTools
+cd ~/Downloads/InstallationTools/scripts
 chmod +x lraiano_github_setup.sh
 ./lraiano_github_setup.sh
 ```
