@@ -17,6 +17,13 @@ After completing, the directory `~/git/lraiano_github/Utilities` is created.
 
 ```
 cd ~/Downloads/InstallationTools/scripts
-chmod +x lraiano_github_setup.sh
-./lraiano_github_setup.sh
+. lraiano_github_setup.sh
 ```
+
+### BASHRC Setup
+Launch `bashrc_setup.sh` to update the bashrc with custom personalizations.
+```
+cd ~/Downloads/InstallationTools/scripts
+. bashrc_setup.sh
+```
+Open a new terminal for personalizations to have effect.
