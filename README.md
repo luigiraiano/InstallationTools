@@ -1,6 +1,6 @@
 # Installation Tools
 
-Use this script to prepare Ubuntu Environment.
+Use this script to prepare your Ubuntu 20.04 Environment.
 
 ## How to use
 1- Download the zip folder of this repo
@@ -10,8 +10,9 @@ Use this script to prepare Ubuntu Environment.
 cd ~/Downloads
 cd InstallationTools
 ```
+4- Launch the scripts from `1` to `4`.
 
-### GIT Setup
+### 1- GIT Setup
 Launch `lraiano_github_setup.sh` script to install `git`, `git-cola` and clone the repo `custom_scripts`.
 After completing, the directory `~/git/lraiano_github/Utilities` is created.
 
@@ -20,10 +21,24 @@ cd ~/Downloads/InstallationTools/scripts
 . lraiano_github_setup.sh
 ```
 
-### BASHRC Setup
+### 2- BASHRC Setup
 Launch `bashrc_setup.sh` to update the bashrc with custom personalizations.
 ```
 cd ~/Downloads/InstallationTools/scripts
 . bashrc_setup.sh
 ```
 Open a new terminal for personalizations to have effect.
+
+### 3- Developer Libraries Setup
+Launch `dev_libs_setup.sh` to install developer libraries.
+```
+cd ~/Downloads/InstallationTools/scripts
+. dev_libs_setup.sh
+```
+
+### 4- ROS Setup
+Launch `ros_setup.sh` to install ROS, Qt Creator - ROS Plugin and ROS dependencies.
+```
+cd ~/Downloads/InstallationTools/scripts
+. ros_setup.sh
+```
