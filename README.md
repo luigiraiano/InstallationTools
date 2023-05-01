@@ -42,3 +42,11 @@ Launch `ros_setup.sh` to install ROS, Qt Creator - ROS Plugin and ROS dependenci
 cd ~/Downloads/InstallationTools/scripts
 . ros_setup.sh
 ```
+
+## Troubleshooting
+### Time Difference between Windows and Ubutnu when dual-booting
+If there is a time difference between Windows and Ubuntu when dual-booting, launch the following script to set Ubuntu to use local time zone.
+```
+cd ~/Downloads/InstallationTools/scripts
+. fix_time_difference_when_dualbooting.sh
+```
