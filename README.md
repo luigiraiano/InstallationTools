@@ -3,14 +3,14 @@
 Use this script to prepare your Ubuntu 20.04 Environment.
 
 ## How to use
-1- Download the zip folder of this repo
-2- Exctract files
-3- Open terminal and navigate to `InstallationTools` folder:
+1. Download the zip folder of this repo
+2. Exctract files
+3. Open terminal and navigate to `InstallationTools` folder:
 ```
 cd ~/Downloads
 cd InstallationTools
 ```
-4- Launch the scripts from `1` to `4`.
+4. Launch the scripts from `1` to `4`.
 
 ### 1- GIT Setup
 Launch `lraiano_github_setup.sh` script to install `git`, `git-cola` and clone the repo `custom_scripts`.
