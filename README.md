@@ -48,7 +48,7 @@ cd ~/Downloads/InstallationTools/scripts
 If there is a time difference between Windows and Ubuntu when dual-booting, launch the following script to set Ubuntu to use local time zone.
 ```
 cd ~/Downloads/InstallationTools/scripts
-. fix_time_difference_when_dualbooting.s\h
+. fix_time_difference_when_dualbooting.sh
 ```
 
 ## Guides
