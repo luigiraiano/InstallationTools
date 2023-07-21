@@ -11,6 +11,8 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 sudo apt update
 sudo apt install ros-noetic-desktop-full
 
+echo "export ROS_DISTRO=Noetic" >> ~/.env_params.env
+
 ROS_WS_DIR=~/ros
 if [ ! -d "$ROS_WS_DIR" ];
 then
@@ -18,6 +20,15 @@ then
 	mkdir $ROS_WS_DIR
 fi
 echo "export ROS_WS_DIR=$ROS_WS_DIR" >> ~/.env_params.env
+
+INITIAL_WS=$ROS_WS_DIR/catkin_ws
+if [ ! -d "$INITIAL_WS" ];
+then
+  echo "Creating dir: $INITIAL_WS"
+  mkdir -p $INITIAL_WS/src
+fi
+echo "export CURRENT_ROS_WS_NAME=catkin_ws" >> ~/.env_params.env
+echo "export CURRENT_ROS_WS_PATH=$INITIAL_WS" >> ~/.env_params.env
 
 echo ""
 echo "ROS Noetic Installed. Installing main dependencies ..."
@@ -35,7 +46,7 @@ echo ""
 echo "personalizing bashrc ..."
 
 sudo echo "" >> ~/.bashrc
-sudo echo "source $CUSTOM_SCRIPTS_DIR/scripts/set_ros_master_uri.sh" >> ~/.bashrc
+sudo echo "source $CUSTOM_SCRIPTS_DIR/scripts/startup_ros_env.sh" >> ~/.bashrc
 
 echo ""
 echo "bashrc personalization completed."
