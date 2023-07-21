@@ -79,7 +79,7 @@ if [ "$x1" = "y" ]; then
 			touch ~/.env_params.env
 		fi
 		
-		echo "export GITHUB_DIR=$GITHUB_DIR" >> ~/.env_params.env
+		echo "export GITHUB_DIR=$GITHUB_DIR" > ~/.env_params.env
 		sudo echo "source ~/.env_params.env" >> ~/.bashrc
 		
 
