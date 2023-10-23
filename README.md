@@ -5,10 +5,10 @@ Use this script to prepare your Ubuntu 20.04 Environment.
 ## How to use
 1. Download the zip folder of this repo
 2. Exctract files
-3. Open terminal and navigate to `InstallationTools` folder:
+3. Open terminal and navigate to `InstallationTools-master` folder:
 ```
 cd ~/Downloads
-cd InstallationTools
+cd InstallationTools-master
 ```
 4. Launch the scripts from `1` to `4`.
 
