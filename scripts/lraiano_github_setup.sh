@@ -81,6 +81,12 @@ if [ "$x1" = "y" ]; then
 		
 		echo "export GITHUB_DIR=$GITHUB_DIR" > ~/.env_params.env
 		sudo echo "source ~/.env_params.env" >> ~/.bashrc
+
+		echo "Configuring GIT..."
+		echo "Adding email address"
+		git config --global user.email "raiano.luigi@gmail.com"
+		echo "Adding Name"
+		git config --global user.name "Luigi Raiano"
 		
 
 	else
