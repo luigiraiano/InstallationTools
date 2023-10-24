@@ -12,6 +12,8 @@ cd InstallationTools-master
 ```
 4. Launch the scripts from `1` to `4`.
 
+__NB: If you're running one or all the following scripts with the repo cloned, the Main Dir name is `InstallationTools`__
+
 ### 1- GIT Setup
 Launch `lraiano_github_setup.sh` script to install `git`, `git-cola` and clone the repo `custom_scripts`.
 After completing, the directory `~/git/lraiano_github/Utilities` is created.
