@@ -14,4 +14,10 @@ echo "Installing EIGEN Libraries ..."
 sudo apt install libeigen3-dev
 
 echo "Installing YAML-CPP"
-sudo apt install libyaml-cpp0.6
+sudo apt install libyaml-cpp-dev
+
+echo "Installing Python3"
+sudo apt install python3
+
+echo "Installing PIP"
+sudo apt install pip
