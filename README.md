@@ -19,7 +19,7 @@ Launch `ssh_setup.sh` script to install to create an ssh key for the account pro
 
 ```
 cd ~/Downloads/InstallationTools-master/scripts
-. ssh_setup.sh
+./ssh_setup.sh
 ```
 
 ### 2- GIT Setup
@@ -28,14 +28,14 @@ After completing, the directory `~/git/lraiano_github/Utilities` is created.
 
 ```
 cd ~/Downloads/InstallationTools-master/scripts
-. lraiano_github_setup.sh
+./lraiano_github_setup.sh
 ```
 
 ### 3- BASHRC Setup
 Launch `bashrc_setup.sh` to update the bashrc with custom personalizations.
 ```
 cd ~/Downloads/InstallationTools-master/scripts
-. bashrc_setup.sh
+./bashrc_setup.sh
 ```
 Open a new terminal for personalizations to have effect.
 
@@ -43,14 +43,14 @@ Open a new terminal for personalizations to have effect.
 Launch `dev_libs_setup.sh` to install developer libraries.
 ```
 cd ~/Downloads/InstallationTools-master/scripts
-. dev_libs_setup.sh
+./dev_libs_setup.sh
 ```
 
 ### 5- ROS Setup
 Launch `ros_setup.sh` to install ROS, Qt Creator - ROS Plugin and ROS dependencies.
 ```
 cd ~/Downloads/InstallationTools-master/scripts
-. ros_setup.sh
+./ros_setup.sh
 ```
 
 ### 6- Docket Setup
@@ -58,7 +58,7 @@ Launch the script `docker_libs_setup.sh` to install Docker libraries.
 
 ```
 cd ~/Downloads/InstallationTools-master/scripts
-. docker_libs_setup.sh
+./docker_libs_setup.sh
 ```
 
 ## Troubleshooting
@@ -66,7 +66,7 @@ cd ~/Downloads/InstallationTools-master/scripts
 If there is a time difference between Windows and Ubuntu when dual-booting, launch the following script to set Ubuntu to use local time zone.
 ```
 cd ~/Downloads/InstallationTools-master/scripts
-. fix_time_difference_when_dualbooting.sh
+./fix_time_difference_when_dualbooting.sh
 ```
 
 ## Guides
