@@ -11,7 +11,7 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 sudo apt update
 sudo apt install ros-noetic-desktop-full
 
-echo "export ROS_DISTRO=Noetic" >> ~/.env_params.env
+echo "export ROS_DISTRO=noetic" >> ~/.env_params.env
 
 ROS_WS_DIR=~/ros
 if [ ! -d "$ROS_WS_DIR" ];
