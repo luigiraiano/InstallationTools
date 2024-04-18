@@ -1,5 +1,5 @@
 #!/bin/bash
-
+GITHUB_DIR=~/git
 CUSTOM_SCRIPTS_DIR=$GITHUB_DIR/Utils/custom_scripts
 
 echo "Adding personalization to bashrc..."
