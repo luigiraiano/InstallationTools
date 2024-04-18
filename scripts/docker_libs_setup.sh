@@ -38,6 +38,19 @@ sudo usermod -aG docker $USER
 echo "Done! For a better experience install the VSCode extention."
 sleep 5
 
+
+# Configure Docker to start on boot with systemd
+sudo systemctl enable docker.service
+sleep 1
+sudo systemctl enable containerd.service
+sleep 1
+
+echo "Docker Configured to be started on boot with systemd"
+
+# To undo the auto boot laucnch the following two lines
+# sudo systemctl disable docker.service
+# sudo systemctl disable containerd.service
+
 ## Reboot
 echo "Rebooting the system to apply changes..."
 sleep 5
