@@ -53,7 +53,7 @@ cd ~/Downloads/InstallationTools-master/scripts
 ./ros_setup.sh
 ```
 
-### 6- Docket Setup
+### 6- Docker Setup
 Launch the script `docker_libs_setup.sh` to install Docker libraries.
 
 ```
