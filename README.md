@@ -22,6 +22,13 @@ cd ~/Downloads/InstallationTools-master/scripts
 ./ssh_setup.sh
 ```
 
+#### Auto-launching the ssh-agent on Windows
+To execute the agent automatically at every new terminal, launch the following additional script:
+```
+cd ~/Downloads/InstallationTools-master/scripts
+./ssh_agent_autolaunch_windows.sh
+```
+
 ### 2- GIT Setup
 Launch `lraiano_github_setup.sh` script to install `git`, `git-cola` and clone the repo `custom_scripts`.
 After completing, the directory `~/git/lraiano_github/Utilities` is created.
